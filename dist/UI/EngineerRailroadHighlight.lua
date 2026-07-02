@@ -57,7 +57,7 @@ local function HeadUnitIsMilitaryEngineer()
         return false;
     end
     local info = GameInfo.Units[head:GetUnitType()];
-    return info ~= nil and info.UnitType == "UNIT_MILITARY_ENGINEER";
+    return info ~= nil and info.UnitType == "UNIT_MILITARY_ENGINEER" or info.UnitType == "UNIT_RAILROAD_BUILDER";
 end
 
 -- ---------------------------------------------------------------------------
