@@ -11,7 +11,7 @@ local RAIL_LENS_LAYER = UILens.CreateLensLayerHash("Hex_Coloring_Great_People");
 local m_railroadRouteIndex = -1;
 local m_highlightActive = false;
 
--- Debug: prints to Lua.log (grep for "MERH"). Turn on while diagnosing.
+[[-- Debug: prints to Lua.log (grep for "MERH"). Turn on while diagnosing.
 local MERH_DEBUG = false;
 local MERH_DEBUG_VERBOSE = false;
 
@@ -25,7 +25,7 @@ local function dbgVerbose(msg)
     if MERH_DEBUG and MERH_DEBUG_VERBOSE then
         print("MERH " .. tostring(msg));
     end
-end
+end]]
 
 -- ---------------------------------------------------------------------------
 local function EnsureRouteIndex()
